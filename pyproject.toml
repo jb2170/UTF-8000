@@ -1,0 +1,17 @@
+[project]
+name = "UTF-8000"
+dynamic = ["version"]
+description = "Unlimited UTF-8!"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jb2170/UTF-8000/"
+
+[tool.setuptools.dynamic]
+version = {attr = "UTF8000.__version__"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
